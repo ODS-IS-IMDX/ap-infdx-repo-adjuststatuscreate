@@ -1,0 +1,10 @@
+# © 2025 NTT DATA Japan Co., Ltd. & NTT InfraNet All Rights Reserved.
+
+version: '3.8'
+
+services:
+  app:
+    image: infdx-lmd-adjuststatuscreate
+    build:
+      context: .
+      dockerfile: Dockerfile
