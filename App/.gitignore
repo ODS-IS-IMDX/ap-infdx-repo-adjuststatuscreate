@@ -1,0 +1,10 @@
+# © 2025 NTT DATA Japan Co., Ltd. & NTT InfraNet All Rights Reserved.
+
+.VSCodeCounter/
+src/main/resources/log/*
+!src/main/resources/log/
+target/
+cacert.crt
+.aws/
+.env
+*.xlsx
