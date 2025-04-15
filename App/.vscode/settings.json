@@ -1,0 +1,13 @@
+// © 2025 NTT DATA Japan Co., Ltd. & NTT InfraNet All Rights Reserved.
+
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.format.settings.profile": "GoogleStyle",
+    "java.format.settings.url": "/App/eclipse-java-google-style.xml",
+    "[java]": {
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.formatOnType": false,
+    },
+  }
