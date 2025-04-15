@@ -1,0 +1,39 @@
+// © 2025 NTT DATA Japan Co., Ltd. & NTT InfraNet All Rights Reserved.
+
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Adjust Status Create Function",
+    "dockerComposeFile": [
+        "../docker-compose.dev.yml"
+    ],
+	"service": "app",
+	"workspaceFolder": "/App",
+	"customizations": {
+		"vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+				"java.jdt.ls.java.home": "/usr/lib/jvm/java-21-amazon-corretto",
+				"java.configuration.updateBuildConfiguration": "interactive"
+			},
+			"extensions": [
+				"redhat.java",
+				"vscjava.vscode-java-pack",
+				"ms-azuretools.vscode-docker",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-lombok",
+				"mhutchie.git-graph",
+				"amazonwebservices.aws-toolkit-vscode",
+				"uctakeoff.vscode-counter"
+			]
+		}
+	},
+	"mounts": [
+        "source=${localWorkspaceFolder},target=/${localWorkspaceFolder},type=bind,consistency=cached"
+    ],
+	"containerEnv": {
+		"TZ": "Asia/Tokyo",
+		// VSCode拡張機能用
+		"NODE_EXTRA_CA_CERTS": "/etc/pki/ca-trust/source/anchors/cacert.crt"
+	}
+}
